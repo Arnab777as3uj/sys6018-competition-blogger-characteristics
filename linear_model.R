@@ -15,7 +15,7 @@ barplot(table(train$gender))
 str(train)
 
 # Linear Model, with text column taken out
-age.lm <- lm(age ~ gender+sign, data = train)
+age.lm <- lm(age ~ gender+topic, data = train)
 
 # read in test data
 test <- read.csv(file='./data/test.csv', stringsAsFactors = T)
